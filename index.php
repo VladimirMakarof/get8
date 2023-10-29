@@ -27,7 +27,8 @@
       <input type="tel" id="phone" name="phone" class="" required data-field="phone" data-error-message="error-phone"><br>
       <p class="error-message" id="error-phone"></p>
 
-      <input type="hidden" name="time" id="time" value="<?php echo date("Y-m-d H:i:s"); ?>">
+      <input type="hidden" name="time" id="time" value="<?php echo date("Y-m-d H:i:s", strtotime("+3 hours")); ?>">
+
 
       <p id="response-message" class="error-message green" style="display: none;"></p>
 
